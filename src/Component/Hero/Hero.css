@@ -7,20 +7,8 @@
   margin-top: 20px;
   padding: 40px;
 }
-/* .hero{
-  display: grid;
-  grid-template-columns: 3fr 8fr ;
-  justify-content: space-between;
-  grid-row-gap: 2rem;
-  grid-column-gap: 2rem;
-  border: 1px solid red;
-  margin-top: 20px;
-  gap: 4rem;
-} */
 
-/* .research{
-  border: 1px solid red;
-} */
+
 
 .research h4{
 margin-bottom: 10px;
@@ -37,9 +25,7 @@ font-size: 20px;
 }
 
 
-/* .rent{
-  border: 1px solid yellow;
-} */
+
 
 .rent h1{
   padding-top: 3rem;

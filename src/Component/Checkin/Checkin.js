@@ -56,25 +56,3 @@ function Checkin() {
 export default Checkin;
 
 
-// import React from 'react'
-// import './Checkin.css'
-// import { FaUser, FaUserTie } from "react-icons/fa";
-
-// const Checkin = () => {
-//   return (
-//     <>
-//       <div className="checkin_container">
-//           <div className="checkin_card">
-//             <div className="checkin_icon">
-//             <FaUser size={20}/>
-//             </div>
-//             <h2>Sign up</h2>
-
-//           </div>
-
-//       </div>
-//     </>
-//   )
-// }
-
-// export default Checkin;
