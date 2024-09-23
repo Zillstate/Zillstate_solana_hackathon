@@ -1,0 +1,107 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6F61DC;
+  padding: 2px 50px;
+  color: #fff;
+}
+
+.main_zillate{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.zillstate_logo img{
+  border: 1px solid #46BAAC;
+  border-radius: 50%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left:20px;
+}
+
+nav ul li a {
+  font-size: 16px;
+  /* color:#000000ea ; */
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn{
+  color: #fff;
+  background-color: #46BAAC;
+  border: none;
+  padding:5px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+
+.hamburger {
+  display: none;
+  font-size: 20px;
+  color: #000000ea;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+@media (max-width: 768px) {
+  .navbar.nav-open {
+    transform: translateX(0);
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    transform: translateX(100%);
+    background: #6F61DC;
+    transition: transform 1s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .nav-open nav {
+    transform: translateX(0);
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  ul{
+    margin-top: 20px !important;
+  }
+  nav ul li {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  button{
+  display: none;
+  }
+  
+}

@@ -1,0 +1,90 @@
+.about_spacing{
+  padding:40px 60px ;
+}
+
+.about{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icons{
+  flex-basis: 46%;
+}
+
+.top_section{
+  border: 1px solid #6a5acd;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.top_section_sub{
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 30px;
+  margin-bottom: 8rem;
+}
+
+.icon_section{
+  font-size: 30px;
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 8rem;
+}
+
+.second_section{
+  padding-top: 4rem;
+}
+
+.flex_second_section{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.text_section{
+  font-size:16px ;
+}
+
+.first_section{
+  border: 1px solid #6a5acd;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+/* Container to hold the image */
+.image-container {
+  flex-basis: 46%;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* The actual background image */
+.background-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Overlay text (First of all) styling */
+.overlay-text {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+

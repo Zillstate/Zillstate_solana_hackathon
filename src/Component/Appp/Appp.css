@@ -1,0 +1,99 @@
+.perks-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #e5e5e5;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.content-container {
+  background-image: linear-gradient(to right, #FFFFFF, #e5e5e5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  padding: 2rem;
+  border-radius:2rem ;
+}
+
+.image-container {
+  width: 50%;
+}
+
+.house-image {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.sidebar {
+  width: 40%;
+  background-color: #E5E5E5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+ 
+}
+
+.item {
+  /* margin-bottom: 10px; */
+  border: 1px solid #6F61DC;
+  border-radius:1rem ;
+}
+
+.toggle-btn {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #6F61DC;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.toggle-btn span {
+  font-size: 20px;
+  margin-left: 10px;
+  border-radius: 45%;
+ text-align: center;
+ color: black;
+  font-weight: lighter;
+  padding: 10px 20px;
+  background-color: #e5e5e5;
+}
+
+.item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: black;
+  padding:10px;
+}
+
+.sign-up-btn {
+  background-color: #46BAAC;
+  color: white;
+  padding:10px 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 18px;
+  width: 100%;
+}

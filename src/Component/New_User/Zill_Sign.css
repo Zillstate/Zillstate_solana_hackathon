@@ -1,0 +1,135 @@
+.auth-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  /* text-align: center; */
+  margin: 0 auto;
+}
+
+.auth-form-container h1 {
+  text-align: center;
+  color: #6F61DC;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+
+.tab.active {
+  border-bottom: 3px solid #46BAAC;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #6F61DC;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #6F61DC;
+}
+
+.sign-in-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #46BAAC;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* .sign-in-btn:hover {
+  background-color: #20a69e;
+} */
+
+.forgot-password {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.forgot-password a{
+  color: #46BAAC;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.divider:before, .divider:after {
+  content: '';
+  display: inline-block;
+  width: 20%;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+}
+
+.divider:before {
+  margin-right: 10px;
+}
+
+.divider:after {
+  margin-left: 10px;
+}
+
+.social-login {
+  display: block;
+  text-align: center;
+  /* justify-content: space-between; */
+}
+
+.google-btn, .wallet-btn {
+  margin: 1rem auto;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border: 1px solid #333333;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.google-btn svg, .wallet-btn svg {
+  margin-right: 10px;
+  color: #6F61DC;
+}
+
+.google-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.wallet-btn:hover {
+  background-color: #f4f4f4;
+}

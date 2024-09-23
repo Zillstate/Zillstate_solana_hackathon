@@ -1,0 +1,88 @@
+.signup_bg{
+  height: 100vh;
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../Asset/signup_bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.filter-container {
+  /* padding-top: 20rem; */
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.filter-container h2{
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  /* padding-top: 10rem; */
+  text-align: start;
+  color:#e5e5e5;
+  font-size: 60px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background: #e5e5e5;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.filter-item label {
+  margin-bottom: 10px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0rem 1rem;
+}
+
+.filter-item input,
+.filter-item select {
+  width: 200px;
+  padding: 8px;
+  /* border: 1px solid #e5e5e5; */
+  border-radius: 7px;
+  border: none !important;
+  font-size: 12px;
+  background:#e5e5e5 ;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+
+.apply_btn,
+.clear_btn {
+  padding: 5px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 1rem;
+}
+
+.apply_btn{
+  background:#46BAAC ;
+  border:1px solid #e5e5e5 ;
+  color: #e5e5e5;
+
+}
+.clear_btn {
+  color: #FC260A;
+  background-color: #e5e5e5;
+  border: 1px solid #FC260A;
+}
+
+
