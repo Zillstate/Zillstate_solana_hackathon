@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { FaGoogle, FaApple } from "react-icons/fa";
 import "./Zill_Sign.css";
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 
 function ZillSign() {
   const [email, setEmail] = useState("");
@@ -25,11 +27,17 @@ function ZillSign() {
     console.log("Continue with Wallet");
   };
 
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/checkin'); // Replace '/target-page' with your desired path
+  };
+
   return (
     <div className="auth-form-container">
       <h1>Welcome to Zillstate</h1>
       <div className="tabs">
-        <span className="tab">Sign in</span>
+        <span className="tab" onClick={handleClick}>Sign in</span>
         <span className="tab active">New account</span>
       </div>
       <form onSubmit={handleSignIn}>
@@ -55,9 +63,12 @@ function ZillSign() {
             required
           />
         </div>
+        <Link to="/signup">
         <button type="submit" className="sign-in-btn">
           Sign in
         </button>
+        </Link>
+        
       </form>
       <div className="forgot-password">
         <a href="/">Forgot your password?</a>

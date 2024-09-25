@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 // import Navbar  from "../Navbar/Navbar";
 import './Signup.css'
+import Property from  '../Property/Property.js';
+// import SeeMore from "../SeeMore/Seemore.js";
 // import { FaSearch } from 'react-icons/fa';
 // import Zill_Sign from "../Zillstate_Form/Zill_Sign";
 
@@ -30,6 +32,7 @@ const RentalFilter = () => {
     setPrice("");
     setDuration("");
   };
+  
 
   return (
     <>
@@ -87,6 +90,8 @@ const RentalFilter = () => {
           </div>
         </div>
     </div>
+    <Property/>
+    {/* <SeeMore/> */}
     {/* <Zill_Sign/> */}
     </>
   );

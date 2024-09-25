@@ -21,7 +21,7 @@ const Hero = () => {
         <p>Seperated that they dont live in <br />
         Bookmarkgroves and they live in market live </p>
             {/* Use Link to make the Sign up button navigate */}
-        <Link to="/signup">
+        <Link to="/zill_sign">
             <button className='btn_signup'>Sign up</button>
           </Link>
         <div className='research_img'>

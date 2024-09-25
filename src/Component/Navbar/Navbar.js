@@ -73,7 +73,7 @@ const Navbar = () => {
       </div>
       <div>
           {/* Add the Link component for Sign up button */}
-      <Link to="/signup">
+      <Link to="/Zill_Sign">
             <button className='btn'>Sign up</button>
           </Link>
       </div>

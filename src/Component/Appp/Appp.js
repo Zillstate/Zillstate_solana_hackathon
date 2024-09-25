@@ -29,7 +29,7 @@ const PerksSection = () => {
         <div className="image-container">
           <img src={house} alt="House" className="house-image" />
             {/* Sign-up Button */}
-        <Link to="/signup">
+        <Link to="/zill_sign">
             <button className='sign-up-btn'>Sign up</button>
           </Link>
         </div>
