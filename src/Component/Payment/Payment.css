@@ -1,0 +1,144 @@
+/* .application-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  border: 1px solid #E5e5e5;
+}
+
+.add-new-card{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.card-details{
+  display: flex;
+  justify-content: space-between;
+}
+
+.city label, .state label, .form-number label{
+  display: block;
+  margin-bottom: 2px; 
+  margin-top: 5px; 
+  font-weight: 550;
+  font-size: 14px;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+} */
+
+
+.application-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #E5E5E5;
+  background-color: #fff;
+}
+
+.add-new-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.add-new-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.add-new-card p {
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.city, .state {
+  width: 48%; /* Makes two inputs fit in one line */
+}
+
+.city label,
+.state label {
+  display: block;
+  font-weight:550;
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+}
+
+.city input,
+.state input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid  #e5e5e5;
+  border-radius: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #46BAAC;
+}
+
+.card-btn {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.card-btn button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.card-btn button[type="submit"] {
+  background-color: #46BAAC;
+  color: white;
+}
+
+.card-btn button[type="reset"] {
+  border:1px solid #FC260A ;
+  color: black;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .card-details {
+    flex-direction: column;
+  }
+
+  .city, .state {
+    width: 100%;
+  }
+
+  .card-btn {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

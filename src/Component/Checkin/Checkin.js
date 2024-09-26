@@ -1,7 +1,7 @@
-// src/App.js
 import React from "react";
 import { FaUser, FaUserTie } from "react-icons/fa";
 import "./Checkin.css";
+
 
 function Checkin() {
   const handleUserSignup = () => {
@@ -48,7 +48,6 @@ function Checkin() {
         </button>
       </div>
     </div>
-   
     </>
   );
 }

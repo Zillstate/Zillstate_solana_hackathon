@@ -7,6 +7,8 @@ import Footer from './Component/Footer/Footer.js';
 import Seemore from './Component/SeeMore/Seemore'
 import ZillSign from './Component/New_User/Zill_Sign.js';
 import Checkin from './Component/Checkin/Checkin.js';
+import PaymentMethod from './Component/PaymentMethod/PaymentMethod.js';
+import Payment from './Component/Payment/Payment.js';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="/see-more" element={<Seemore />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/checkin" element={<Checkin />} />
+            <Route path="/paymentmethod" element={<PaymentMethod />} />
+            <Route path="/payment" element={<Payment />} />
           </Routes>
         <Footer />
       </div>
