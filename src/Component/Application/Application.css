@@ -1,5 +1,5 @@
 .application-form {
-  width: 600px;
+  width: 500px;
   margin: 50px auto;
   padding: 60px;
   border-radius: 10px;
@@ -14,7 +14,7 @@
 }
 
 .application-form p {
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -36,8 +36,8 @@
 }
 
 .active-tab {
-  border-bottom: 2px solid #00d084;
-  color: #00d084;
+  border-bottom: 2px solid #46BAAC;
+  color: #46BAAC;
 }
 
 .native{
@@ -55,6 +55,15 @@
   font-size: 14px;
 }
 
+.form-number input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid  #e5e5e5;
+  border-radius: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
 .checkbox-group {
   display: inline-flex;
   align-items: start;
@@ -63,7 +72,7 @@
 }
 
 .checkbox-group label a {
-  color: #00d084;
+  color: #46BAAC;
   text-decoration: none;
 }
 

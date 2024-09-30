@@ -68,6 +68,13 @@ p {
   margin-bottom: 4rem;
 }
 
+/* .toggle-btn>button:first-child{
+  background-color: red;
+}
+.toggle-btn:last-child{
+  background-color: yellow;
+} */
+
 .toggle-btn span {
   font-size: 20px;
   margin-left: 10px;

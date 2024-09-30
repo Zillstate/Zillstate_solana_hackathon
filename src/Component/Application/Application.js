@@ -174,7 +174,7 @@ const Application = () => {
                   </label>
             </div>
           </div>
-      <button type="submit" className="apply-btn">Apply now</button>
+      <button type="submit" className="apply-btn" onClick={HandleApply}>Apply now</button>
     </form>
     </>
   );

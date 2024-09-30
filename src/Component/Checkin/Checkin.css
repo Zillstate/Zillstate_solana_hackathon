@@ -1,33 +1,27 @@
-/* .checkin_container{
-  background-image: #e5e5e5;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: 1px solid #333333;
-  padding:20px ;
-  width: 500px;
-  margin: 0 auto;
-  border-radius:10px;
-} */
+.join_us{
+  text-align: center;
+  font-size: 20px;
+  color: #6F61DC;
+  padding-top: 4rem;
+
+}
 
 .signup-container {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 450px;
   background-color: #fff;
-  /* border: 1px solid green; */
   border-radius: 10px;
   margin:  4rem auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .signup-card {
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 10px;
-  text-align: start;
-  
+  padding: 20px ;
+  margin-bottom: 4px;
+  text-align: start; 
 }
 
 .sign_icon_text{
@@ -60,20 +54,34 @@
   padding: 10px 20px;
   width: inherit;
   border: none;
-  background-color: #28c7b7;
-  color: white;
+  background-color:white;
+  color: #46BAAC;
   font-size: 14px;
   border-radius: 20px;
   cursor: pointer;
+  border: 1px solid #46BAAC;
 }
 
 .divided{
   width: 90%;
   height: 1px;
-  background-color: #6F61DC;
+  background-color: #e5e5e5;
   margin: auto;
 }
 
 .signup-btn:hover {
-  background-color: #20a69e;
+  background-color: #46BAAC;
+  color: white;
+}
+
+.account_setup p{
+  text-align: center;
+  font-size: 14px;
+}
+.account_setup a{
+  text-align: center;
+  font-size: 14px;
+  color: #46BAAC;
+  text-decoration: none;
+  padding-left: .5rem;
 }

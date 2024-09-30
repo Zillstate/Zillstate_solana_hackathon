@@ -6,6 +6,8 @@ import Application from '../Application/Application'
 import SuccessPay from '../SuccessPay/SuccessPay'
 import PaymentMethod from '../PaymentMethod/PaymentMethod'
 import AddPayment from '../AddPayment/AddPayment'
+import { Link } from 'react-router-dom'; 
+
 
 function Checkin() {
   const handleUserSignup = () => {
@@ -20,7 +22,7 @@ function Checkin() {
 
   return (
     <>
-    <h1>Zillstate state</h1>
+    <h2 className="join_us">How will you like to join Zillstate?</h2>
     <div className="signup-container">
       <div className="signup-card">
         <div className="sign_icon_text">
@@ -52,6 +54,12 @@ function Checkin() {
           Continue as landlord
         </button>
       </div>
+    </div>
+    <div className="account_setup">
+      <p>Have an account already? 
+      <Link to="/zill_sign" class>
+            Sign up
+          </Link></p>
     </div>
     <Payment/>
     <Application/>

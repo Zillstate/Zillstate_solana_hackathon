@@ -1,45 +1,57 @@
 import React, { useState } from "react";
-// import Navbar  from "../Navbar/Navbar";
-import './Signup.css'
+import './Signup.css';
 import Property from  '../Property/Property.js';
-// import SeeMore from "../SeeMore/Seemore.js";
-// import { FaSearch } from 'react-icons/fa';
-// import Zill_Sign from "../Zillstate_Form/Zill_Sign";
 
 const RentalFilter = () => {
-  // State for the filters
   const [location, setLocation] = useState("");
   const [spaceType, setSpaceType] = useState("");
   const [price, setPrice] = useState("");
   const [duration, setDuration] = useState("");
+  const [results, setResults] = useState([]);  // State to store rental results
 
   // Apply filter functionality
-  const applyFilter = () => {
-    // Add functionality for applying the filter
-    console.log("Filters applied:", {
+  const applyFilter = async () => {
+    const filterData = {
       location,
       spaceType,
       price,
       duration,
-    });
+    };
+
+    try {
+      const response = await fetch("http://localhost/api/filter_rentals.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(filterData),
+      });
+      const data = await response.json();
+
+      if (Array.isArray(data)) {
+        setResults(data);  // Store rental results
+      } else {
+        setResults([data]);  // Handle single response or error message
+      }
+    } catch (error) {
+      console.error("Error applying filters:", error);
+    }
   };
 
   // Clear filter functionality
   const clearFilter = () => {
-    // Reset all the filters
     setLocation("");
     setSpaceType("");
     setPrice("");
     setDuration("");
+    setResults([]);  // Clear the results
   };
-  
 
   return (
     <>
-    <div className="signup_bg">
-    {/* <Navbar/> */}
+      <div className="signup_bg">
         <div className="filter-container">
-          <h2>Available rentals in <br />this location</h2>
+          <h2>Available rentals in this location</h2>
           <div className="filters">
             <div className="filter-item">
               <label>Location</label>
@@ -81,18 +93,27 @@ const RentalFilter = () => {
             </div>
           </div>
           <div className="buttons">
-            <button onClick={applyFilter}
-            className="apply_btn" >Apply Filter</button>
-            <button onClick={clearFilter}
-            className="clear_btn">
-              Clear Filter
-            </button>
+            <button onClick={applyFilter} className="apply_btn">Apply Filter</button>
+            <button onClick={clearFilter} className="clear_btn">Clear Filter</button>
           </div>
+
+          {/* Display Results */}
+          {results.length > 0 && (
+            <div className="results-container">
+              <h3>Rental Results:</h3>
+              {results.map((rental, index) => (
+                <div key={index} className="rental-item">
+                  <p>Location: {rental.location}</p>
+                  <p>Type: {rental.space_type}</p>
+                  <p>Price: {rental.price}</p>
+                  <p>Duration: {rental.duration}</p>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
-    </div>
-    <Property/>
-    {/* <SeeMore/> */}
-    {/* <Zill_Sign/> */}
+      </div>
+      <Property/>
     </>
   );
 };
