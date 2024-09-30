@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Application.css';
+import { useNavigate } from 'react-router-dom'
+
 
 const Application = () => {
   const [formData, setFormData] = useState({
@@ -29,14 +31,28 @@ const Application = () => {
     console.log(formData);
   };
 
+  const navigate = useNavigate();
+
+  const handleMakePayment = () => {
+    navigate('/addpayment'); // '/target-page' 
+    };
+ 
+  const HandleApply = () => {
+    navigate('/application'); // '/target-page'
+  };
+ 
+
+
   return (
+    <>
+    <h1>Application</h1>
     <form className="application-form" onSubmit={handleSubmit}>
       <h1>Apply for this home</h1>
       <p>Catalyst offers the competitive advantage of leveraging  <br /> advanced AI technologies</p>
 
       <div className="form-tab">
-        <p className="active-tab">Application form</p>
-        <p>Make payment</p>
+        <p className="active-tab" onClick={HandleApply}>Application form</p>
+        <p onClick={handleMakePayment}>Make payment</p>
         {/* <button type="button" className="active-tab">Application form</button>
         <button type="button">Make payment</button> */}
       </div>
@@ -160,6 +176,7 @@ const Application = () => {
           </div>
       <button type="submit" className="apply-btn">Apply now</button>
     </form>
+    </>
   );
 };
 

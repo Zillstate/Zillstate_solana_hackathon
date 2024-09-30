@@ -9,6 +9,9 @@ import ZillSign from './Component/New_User/Zill_Sign.js';
 import Checkin from './Component/Checkin/Checkin.js';
 import PaymentMethod from './Component/PaymentMethod/PaymentMethod.js';
 import Payment from './Component/Payment/Payment.js';
+import Application from './Component/Application/Application.js';
+import AddPayment from './Component/AddPayment/AddPayment.js';
+import SuccessPay from './Component/SuccessPay/SuccessPay.js'
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
             <Route path="/checkin" element={<Checkin />} />
             <Route path="/paymentmethod" element={<PaymentMethod />} />
             <Route path="/payment" element={<Payment />} />
+            <Route path="/application" element={<Application />} />
+            <Route path="/addpayment" element={<AddPayment />} />
+            <Route path="/success_booking" element={<SuccessPay />} />
           </Routes>
         <Footer />
       </div>

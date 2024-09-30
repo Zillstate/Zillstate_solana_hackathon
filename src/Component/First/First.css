@@ -24,16 +24,14 @@
   font-size: 30px;
 }
 
-.form_component{
+.form_component {
   height: 100vh;
-  background-size: cover;
-  background-image: url('../../Asset/Seach.png'); 
-  background-position: center;
+  background: url('../../Asset/Seach.png') center/cover no-repeat, linear-gradient(to bottom, #000, #ffffff);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: white !important;
   text-align: center;
 }
 
@@ -45,7 +43,7 @@
   border-radius: 50px;
   padding: 8px 16px;
   width: 400px;
-  background-color:#f3f3f3;
+  background-color:#f3f3f3 !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -65,7 +63,6 @@
   cursor: pointer;
   font-size: 16px;
 }
-
 
 .search-bar input::placeholder {
   color:black;

@@ -32,6 +32,7 @@
   text-align: center;
   padding: 0.5rem 0;
   border-bottom: 2px solid #e5e7eb;
+  cursor: pointer;
 }
 
 .home-application-form .steps .active {

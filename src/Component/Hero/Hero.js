@@ -7,8 +7,6 @@ import First from '../../Component/First/First.js'
 import About from '../../Component/About/About.js'
 import Research from '../../Component/Research/Research.js'
 import Appp from '../../Component/Appp/Appp.js'
-// import ZillSign from '../New_User/Zill_Sign.js';
-// import Checkin from '../Checkin/Checkin.js';
 
 const Hero = () => {
   return (
@@ -47,10 +45,7 @@ const Hero = () => {
     <First/>
      <About/>
     <Research/>
-    <Appp/>
-    {/* <ZillSign/> */}
-    {/* <Checkin/> */}
-      
+    <Appp/>      
     </>
   )
 }

@@ -24,6 +24,7 @@
   justify-content: space-around;
   margin-bottom: 20px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .form-tab button {
@@ -44,7 +45,9 @@
   justify-content: space-between;
 }
 
-.city label, .state label, .form-number label{
+.city label,
+.state label,
+.form-number label{
   display: block;
   margin-bottom: 2px; 
   margin-top: 5px; 

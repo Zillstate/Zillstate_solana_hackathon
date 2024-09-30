@@ -13,11 +13,13 @@ const PaymentMethod = () => {
 
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate('/payment'); // Replace '/target-page' with your desired path
+  const handlePayment = () => {
+    navigate('/payment'); // '/target-page' 
   };
 
   return (
+    <>
+    <h1>paymentmethod</h1>
     <div className="payment-container">
       <h2>Choose payment method</h2>
       
@@ -40,9 +42,9 @@ const PaymentMethod = () => {
       </div>
       
       {/* Continue Button */}
-      {/* <button className="continue-button" onClick={handleClick}>Continue</button> */}
-      <button className="continue-button" onClick={handleClick}>Continue</button>
+      <button className="continue-button" onClick={handlePayment}>Continue</button>
     </div>
+    </>
   );
 };
 

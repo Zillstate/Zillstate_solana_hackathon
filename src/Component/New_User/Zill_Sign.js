@@ -29,15 +29,15 @@ function ZillSign() {
 
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate('/checkin'); // Replace '/target-page' with your desired path
+  const handleSign = () => {
+    navigate('/checkin'); // '/target-page' 
   };
 
   return (
     <div className="auth-form-container">
       <h1>Welcome to Zillstate</h1>
       <div className="tabs">
-        <span className="tab" onClick={handleClick}>Sign in</span>
+        <span className="tab" onClick={handleSign}>Sign in</span>
         <span className="tab active">New account</span>
       </div>
       <form onSubmit={handleSignIn}>

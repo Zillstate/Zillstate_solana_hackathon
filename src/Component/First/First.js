@@ -1,61 +1,3 @@
-// import React, { useState } from 'react'; // Import useState from React
-// import './First.css';
-// import { FaSearch } from 'react-icons/fa';
-
-// const First = () => {
-//   const [searchInput, setSearchInput] = useState(''); // useState declaration
-
-//   const handleChange = (e) => {
-//     setSearchInput(e.target.value); // Capture input value
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault(); // Prevent page reload
-//     console.log('Search Input:', searchInput); // Log search input
-//   };
-
-//   return (
-//     <>
-//       <div className="endless_choices">
-//         <h1>
-//           Endless Choices of houses <br /> to pick from conveniently
-//         </h1>
-//         <div className="endless_review">
-//           <div className="reviews">
-//             <h3>$3.6k+</h3>
-//             <p>Sign up</p>
-//           </div>
-//           <div className="reviews">
-//             <h3>40+</h3>
-//             <p>Transactions</p>
-//           </div>
-//           <div className="reviews">
-//             <h3>55+</h3>
-//             <p>Users</p>
-//           </div>
-//         </div>
-//       </div>
-//      {/* form component */}
-//      <div className="form_component">
-//      <form className="search-bar" onSubmit={handleSubmit}>
-//         <input
-//           type="text"
-//           placeholder="Enter an address, neighbourhood or city location"
-//           value={searchInput}
-//           onChange={handleChange}
-//         />
-//         <button type="submit">
-//           <FaSearch /> {/* React-icons search icon */}
-//         </button>
-//       </form>
-//      </div>
-//     </>
-//   );
-// };
-
-// export default First;
-
-
 import React, { useState } from 'react';
 import './First.css';
 import { FaSearch } from 'react-icons/fa';
@@ -74,7 +16,7 @@ const First = () => {
     e.preventDefault();
     setError(''); // Clear any previous error messages
 
-    const API_KEY = 'YOUR_API_KEY'; // Replace with your actual API key
+    const API_KEY = 'YOUR_API'; // Replace with your actual API key
     const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(searchInput)}&key=${API_KEY}`;
 
     try {

@@ -1,11 +1,34 @@
 import React, { useState } from 'react';
 import { PlusCircle } from 'lucide-react';
 import './AddPayment.css';
+import { useNavigate } from 'react-router-dom'
+
 
 const AddPayment = () => {
   const [agreedToTerms, setAgreedToTerms] = useState(false);
 
+  const navigate = useNavigate();
+
+  const HandleApply = () => {
+    navigate('/application'); // '/target-page'
+  };
+
+  const handleMakePayment = () => {
+    navigate('/addpayment'); // '/target-page'
+  };
+
+  const HandleCard = () => {
+    navigate('/payment'); // '/target-page'
+  };
+
+  const handleWeb = () => {
+    navigate('/paymentmethod'); // '/target-page'
+  };
+
+
   return (
+    <>
+    <h1>Addpayment</h1>
     <div className="home-application-form">
       <h1>Apply for this home</h1>
       <p className="subtitle">
@@ -13,14 +36,14 @@ const AddPayment = () => {
       </p>
 
       <div className="steps">
-        <span>Application form</span>
+        <span onClick={HandleApply}>Application form</span>
         <span>Personality match</span>
-        <span className="active">Make payment</span>
+        <span className="active" onClick={handleMakePayment}>Make payment</span>
       </div>
 
       <div className="add-section">
         <h2>Add card</h2>
-        <div className="add-button">
+        <div className="add-button" onClick={HandleCard} >
           <button>
             <PlusCircle size={20} />
             Add new card
@@ -28,7 +51,7 @@ const AddPayment = () => {
         </div>
       </div>
 
-      <div className="add-section">
+      <div className="add-section" onClick={handleWeb}>
         <h2>Add web3 wallet</h2>
         <div className="add-button">
           <button>
@@ -53,6 +76,7 @@ const AddPayment = () => {
         Apply now
       </button>
     </div>
+    </>
   );
 };
 

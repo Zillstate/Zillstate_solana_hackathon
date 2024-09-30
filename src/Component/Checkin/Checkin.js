@@ -1,7 +1,11 @@
 import React from "react";
 import { FaUser, FaUserTie } from "react-icons/fa";
 import "./Checkin.css";
-
+import Payment from '../Payment/Payment'
+import Application from '../Application/Application'
+import SuccessPay from '../SuccessPay/SuccessPay'
+import PaymentMethod from '../PaymentMethod/PaymentMethod'
+import AddPayment from '../AddPayment/AddPayment'
 
 function Checkin() {
   const handleUserSignup = () => {
@@ -16,6 +20,7 @@ function Checkin() {
 
   return (
     <>
+    <h1>Zillstate state</h1>
     <div className="signup-container">
       <div className="signup-card">
         <div className="sign_icon_text">
@@ -48,6 +53,11 @@ function Checkin() {
         </button>
       </div>
     </div>
+    <Payment/>
+    <Application/>
+    <SuccessPay/>
+    <AddPayment/>
+    <PaymentMethod/>
     </>
   );
 }

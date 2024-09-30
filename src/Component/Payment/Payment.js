@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Payment.css'; 
-import { FiSettings } from 'react-icons/fi'; 
+import { FiSettings } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom'
+
 
 function Payment() {
   const [cardNumber, setCardNumber] = useState('');
@@ -27,6 +29,7 @@ function Payment() {
 
 
 
+
   const handleSubmit = (event) => {
     event.preventDefault();
     // Perform validation and submission logic here
@@ -36,8 +39,17 @@ function Payment() {
     console.log('Card Name', nameOnCard)
   };
 
+  const navigate = useNavigate();
+
+  const handleSuccesspay = () => {
+    navigate('/success_booking'); // Replace '/target-page' with your desired path
+  };
+
+
   return (
-    <div className="application-form">
+    <>
+    <h1>payment</h1>
+    <div className="payment-form">
         <div className='add-new-card'>
           <h3>Add New Card</h3>
           <p><FiSettings/></p>
@@ -97,13 +109,14 @@ function Payment() {
       </div>
         
        <div className='card-btn'>
-        <button type='submit'>Add card</button>
+        <button type='submit' onClick={handleSuccesspay}>Add card</button>
         <button type="reset">Cancel</button>
        </div>
 
     
       </form>
     </div>
+    </>
   );
 }
 

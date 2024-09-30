@@ -14,7 +14,7 @@ const BookingSuccessful = ({ onClose, onGoBack }) => {
   );
 };
 
-function App() {
+function Booking() {
   const [showModal, setShowModal] = useState(true);
 
   const handleClose = () => {
@@ -35,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default Booking;

@@ -8,13 +8,19 @@ import main from '../../Asset/main-image.png'
 import subImage from '../../Asset/left-sub-image.png'
 import firstLeftImage from '../../Asset/first-left.png'
 import leftImage from '../../Asset/second-left.png'
+import { useNavigate } from 'react-router-dom'
+
 // import { useState } from 'react';
 
 const SeeMore = () => {
   const [duration, setDuration] = useState('Quarterly');
+  
 
+  const navigate = useNavigate();
 
- 
+  const HandleApply = () => {
+    navigate('/application'); // '/target-page'
+  };
 
   return (
     <div className="property-container">
@@ -144,7 +150,7 @@ const SeeMore = () => {
                     I have read and agreed to the <a href="/">terms of service</a>
                   </label>
             </div>
-          <button className="apply-btn">Apply now</button>
+          <button className="apply-btn" onClick={HandleApply}>Apply now</button>
           <button className="tour-btn">Book a tour</button>
         </div>
       </div>
@@ -163,16 +169,6 @@ const SeeMore = () => {
               src={property}
               alt="Property"
             />
-            {/* <h4 className="rental-title">Palmspring 8D</h4>
-            <div className="rental-location">
-              <FaMapMarkerAlt className="icon" /> Abuja
-            </div>
-            <div className="rental-features">
-              <FaBed className="icon" /> 3 bed(s) <span> • </span>
-              <FaUsers className="icon" /> Shared space
-            </div>
-            <p className="rental-price">₦2,500,750.40 annually</p>
-            <button className="see-more-btn"  onClick={handleClick}>See more</button> */}
             <div className="name_property">
               <div className="name_pricing">
                   <h3>Palmspring 8D</h3>

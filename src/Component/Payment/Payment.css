@@ -1,38 +1,5 @@
-/* .application-form {
-  max-width: 400px;
-  margin: 2rem auto;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
-  border: 1px solid #E5e5e5;
-}
 
-.add-new-card{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.card-details{
-  display: flex;
-  justify-content: space-between;
-}
-
-.city label, .state label, .form-number label{
-  display: block;
-  margin-bottom: 2px; 
-  margin-top: 5px; 
-  font-weight: 550;
-  font-size: 14px;
-}
-
-button:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-} */
-
-
-.application-form {
+.payment-form {
   max-width: 400px;
   margin: 2rem auto;
   padding: 20px;
@@ -56,7 +23,7 @@ button:disabled {
 
 .add-new-card p {
   font-size: 1.5rem;
-  color: #888;
+  color: #e5e5e5;
   cursor: pointer;
 }
 
