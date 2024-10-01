@@ -51,7 +51,7 @@ const RentalFilter = () => {
     <>
       <div className="signup_bg">
         <div className="filter-container">
-          <h2>Available rentals in this location</h2>
+          <h2>Available rentals in <br/> this location</h2>
           <div className="filters">
             <div className="filter-item">
               <label>Location</label>
@@ -119,3 +119,5 @@ const RentalFilter = () => {
 };
 
 export default RentalFilter;
+
+

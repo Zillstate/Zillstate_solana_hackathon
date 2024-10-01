@@ -49,17 +49,17 @@ p {
 .item {
   /* margin-bottom: 10px; */
   border: 1px solid #6F61DC;
-  border-radius:1rem ;
+  border-radius:20px;
 }
 
 .toggle-btn {
   font-size: 20px;
   font-weight: bold;
-  background-color: #6F61DC;
+  /* background-color: #6F61DC; */
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 1rem;
+  border-radius: 20px;
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -68,12 +68,6 @@ p {
   margin-bottom: 4rem;
 }
 
-/* .toggle-btn>button:first-child{
-  background-color: red;
-}
-.toggle-btn:last-child{
-  background-color: yellow;
-} */
 
 .toggle-btn span {
   font-size: 20px;
@@ -86,12 +80,27 @@ p {
   background-color: #e5e5e5;
 }
 
+.first_btn{
+  background-color: #6F61DC;
+  color: white;
+}
+.second_btn{
+  background-color: #c0b9f6;
+  color: black;
+}
+.last_btn{
+  background-color: black;
+  color: white;
+}
+
 .item p {
   margin-top: 10px;
   font-size: 14px;
   color: black;
   padding:10px;
+  text-align: start;
 }
+
 
 .sign-up-btn {
   background-color: #46BAAC;

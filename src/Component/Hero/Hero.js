@@ -14,10 +14,9 @@ const Hero = () => {
     <div className="hero">
   {/* the reserach aspect og the page */}
       <div className="research">
-        <h4>Research</h4>
-        <h2>$3.68M+</h2>
-        <p>Seperated that they dont live in <br />
-        Bookmarkgroves and they live in market live </p>
+        <h4>SOLANA INTERGRATED</h4>
+        <h2>3.4s average speed</h2>
+        <p>Zillstate is revolutionizing the rental <br />experiences by connecting home searchers <br />directly to landlords</p>
             {/* Use Link to make the Sign up button navigate */}
         <Link to="/zill_sign">
             <button className='btn_signup'>Sign up</button>

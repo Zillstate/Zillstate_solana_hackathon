@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-// import {data} from './data';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../../Asset/ABjob.png'
+import logo from '../../Asset/zillstate_logo.png'
 
 
 const Navbar = () => {
@@ -57,7 +56,7 @@ const Navbar = () => {
       <div className='zillstate_logo'>
         <img src={logo}
          alt="Zillstate logo"
-         width={50} />
+         width={55} />
       </div>
       <nav>
         <ul>

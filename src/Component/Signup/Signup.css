@@ -7,7 +7,6 @@
 }
 
 .filter-container {
-  /* padding-top: 20rem; */
   max-width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -17,7 +16,6 @@
 .filter-container h2{
   padding-top: 10rem;
   padding-bottom: 5rem;
-  /* padding-top: 10rem; */
   text-align: start;
   color:#e5e5e5;
   font-size: 60px;
@@ -50,7 +48,6 @@
 .filter-item select {
   width: 200px;
   padding: 8px;
-  /* border: 1px solid #e5e5e5; */
   border-radius: 7px;
   border: none !important;
   font-size: 12px;
@@ -67,7 +64,7 @@
 .apply_btn,
 .clear_btn {
   padding: 5px 14px;
-  border-radius: 3px;
+  /* border-radius: 3px; */
   cursor: pointer;
   font-size: 12px;
   border-radius: 1rem;
@@ -80,7 +77,8 @@
 
 }
 .clear_btn {
-  color: #FC260A;
-  background-color: #e5e5e5;
+  color: #fff;
+  background-color: transparent;
   border: 1px solid #FC260A;
+  opacity: 1;
 }

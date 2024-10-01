@@ -13,10 +13,15 @@ header{
   text-align: center;
 }
 
+.zillstate_logo{
+  padding-top: .2rem;
+}
+
 .zillstate_logo img{
   border: 1px solid #46BAAC;
   border-radius: 50%;
 }
+
 nav ul {
   display: flex;
   list-style: none;

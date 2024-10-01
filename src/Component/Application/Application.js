@@ -45,7 +45,6 @@ const Application = () => {
 
   return (
     <>
-    <h1>Application</h1>
     <form className="application-form" onSubmit={handleSubmit}>
       <h1>Apply for this home</h1>
       <p>Catalyst offers the competitive advantage of leveraging  <br /> advanced AI technologies</p>

@@ -5,6 +5,7 @@ import first_of_all from '../../Asset/First_of_all.png'
 import reviews from '../../Asset/review.png'
 import user from '../../Asset/user.png'
 import signup from '../../Asset/signup.png'
+import newlist from '../../Asset/newlist.png'
 
 const About = () => {
   return (
@@ -15,12 +16,11 @@ const About = () => {
           <div className="icons_tags">
             <div className="top_section">
               <div className='top_section_sub'>
-                <img src={signup} alt="signup icon" width={40} />
-                <h3>48 Signups</h3>
+                <img src={signup} alt="signup icon" width={35} />
+                <h3>Speed &amp; Efficiency</h3>
               </div>
               <div className="text_section">
-              Seperated that they don't live in Bookmarkgrove and they lives in marked.
-              Seperated that they don't live in Bookmarkgrove and they lives in marked.
+             Powered by Solana blockchain, our platform ensure instant transaction and a smooth user experience &ndash; Zillstate speeds up you rental jouney from start to finish.
               </div>
             </div>
             {/* second section */}
@@ -30,22 +30,22 @@ const About = () => {
               <div className="flex_second_section">
                 <div className="first_section">
                   <div className="icon_section">
-                  <img src={reviews} alt="review icon" width={40}  />
-                  <h3>48%</h3>
+                  <img src={reviews} alt="review icon" width={20}  />
+                  <h4>Crypto enable</h4>
                   </div>
-                  <div className="text_section">
-                  Seperated that they don't live in Bookmarkgrove and they lives in marked.
-                  </div>
+                  <p className="text_section">
+                 Whether you prefer paying with your credit card or paying with Cryptocurrency, we make transaction simple and secure.
+                  </p>
                 </div>
 
                 <div className="first_section">
-                  <div className="icon_section">
-                  <img src={user} alt="users icon" width={40}/>
-                  <h3>50 Users</h3>
+                  <div className="icon_section last_icon">
+                  <img src={user} alt="users icon" width={25}/>
+                  <h4>Direct connections</h4>
                   </div>
-                  <div className="text_section">
-                  Seperated that they don't live in Bookmarkgrove and they lives in marked.
-                  </div>
+                  <p className="text_section">
+                  We connect you directly with landlords, giving you more control and transparency in rental process.
+                  </p>
                 </div>
               </div>
             </div>
@@ -61,7 +61,8 @@ const About = () => {
           />
            {/* Overlay text (First of all) */}
           <div className="overlay-text">
-            <span>First of all</span>
+          <img src={newlist} alt="users icon" width={15}/>
+            <span>New listed</span>
           </div>
       </div>
       </div>

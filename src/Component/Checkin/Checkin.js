@@ -1,11 +1,6 @@
 import React from "react";
 import { FaUser, FaUserTie } from "react-icons/fa";
 import "./Checkin.css";
-import Payment from '../Payment/Payment'
-import Application from '../Application/Application'
-import SuccessPay from '../SuccessPay/SuccessPay'
-import PaymentMethod from '../PaymentMethod/PaymentMethod'
-import AddPayment from '../AddPayment/AddPayment'
 import { Link } from 'react-router-dom'; 
 
 
@@ -61,11 +56,7 @@ function Checkin() {
             Sign up
           </Link></p>
     </div>
-    <Payment/>
-    <Application/>
-    <SuccessPay/>
-    <AddPayment/>
-    <PaymentMethod/>
+    
     </>
   );
 }

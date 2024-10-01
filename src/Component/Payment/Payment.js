@@ -48,7 +48,6 @@ function Payment() {
 
   return (
     <>
-    <h1>payment</h1>
     <div className="payment-form">
         <div className='add-new-card'>
           <h3>Add New Card</h3>

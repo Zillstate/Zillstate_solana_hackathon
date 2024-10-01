@@ -19,7 +19,6 @@ const PaymentMethod = () => {
 
   return (
     <>
-    <h1>paymentmethod</h1>
     <div className="payment-container">
       <h2>Choose payment method</h2>
       

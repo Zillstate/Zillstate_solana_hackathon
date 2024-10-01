@@ -55,10 +55,10 @@ const SeeMore = () => {
         <p className='property-space'>1 bed(s) • Entire space • 12 hrs power • Unfurnished</p>
       <div className="divide"></div>
 
-        <section>
+        <section className='special'>
           <h2>What's special</h2>
           <p>
-            Catalyst transforms businesses by integrating AI into the core of operations. Our AI-driven tools provide actionable insights, increase productivity, and improve decision-making. With Catalyst, your business stays competitive in an evolving digital..
+           Bright end  unit town home located just north of the airport around. Our AI-driven tools provide actionable insights, increase productivity and imporove decision-making. With Catalyst, your business Staus competitive in an evolving digital
           </p>
           <div className="divide"></div>
 

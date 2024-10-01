@@ -14,9 +14,11 @@
 margin-bottom: 10px;
 font-size: 20px;
 }
+
 .research h2{
 margin-bottom: 10px;
 font-size: 40px;
+color:#6F61DC ;
 }
 
 .research p{
@@ -43,7 +45,7 @@ font-size: 20px;
   padding:5px 20px;
   font-size: 16px;
   border-radius: 20px;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   cursor: pointer;
 }
 

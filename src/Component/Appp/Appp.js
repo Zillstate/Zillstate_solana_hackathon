@@ -36,35 +36,35 @@ const PerksSection = () => {
         
         {/* Right: Sidebar */}
         <div className="sidebar">
-          <h3>Getting rid of the Agent...</h3>
+          <h3>Why choose us  still...</h3>
           
           {/* Web3 Tokens */}
           <div className="item">
-            <button className="toggle-btn" onClick={() => toggleSection('web3')}>
-              Web3 tokens <span>{expanded.web3 ? '-' : '+'}</span>
+            <button className="toggle-btn first_btn" onClick={() => toggleSection('web3')}>
+              Lighting fast results <span>{expanded.web3 ? '-' : '+'}</span>
             </button>
             {expanded.web3 && (
-              <p>Separated that they don't live in Bookmarksgrove and they live in marked. Separated that they don't live in Bookmarksgrove and they live in marked. Separated that they don't live in Bookmarksgrove and they live in marked.</p>
+              <p>Explore the home, connect with landlords, and experience the future of renting. No middleman, no hassle. With Zillstate, your next home is just a clicks away</p>
             )}
           </div>
           
           {/* Rent with agents wahala */}
           <div className="item">
-            <button className="toggle-btn" onClick={() => toggleSection('rent')}>
-              Rent with agents wahala <span>{expanded.rent ? '-' : '+'}</span>
+            <button className="toggle-btn second_btn" onClick={() => toggleSection('rent')}>
+              Bypass the middleman <span>{expanded.rent ? '-' : '+'}</span>
             </button>
             {expanded.rent && (
-              <p>Separated that they don't live in Bookmarksgrove and they live in marked...</p>
+              <p>Explore the home, connect with landlords, and experience the future of renting. No middleman, no hassle. With Zillstate, your next home is just a clicks away</p>
             )}
           </div>
           
           {/* Win wild tokens */}
           <div className="item">
-            <button className="toggle-btn" onClick={() => toggleSection('win')}>
-              Win wild tokens <span>{expanded.win ? '-' : '+'}</span>
+            <button className="toggle-btn last_btn" onClick={() => toggleSection('win')}>
+              Pay with your sol token<span>{expanded.win ? '-' : '+'}</span>
             </button>
             {expanded.win && (
-              <p>Separated that they don't live in Bookmarksgrove and they live in marked...</p>
+              <p>Explore the home, connect with landlords, and experience the future of renting. No middleman, no hassle. With Zillstate, your next home is just a clicks away</p>
             )}
           </div>
         </div>

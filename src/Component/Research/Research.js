@@ -19,9 +19,9 @@ const HeroSection = () => {
   return (
     <div className="research-section">
       <div className="research-content">
-        <div className="research-title">First of all</div>
+        <div className="research-title">What our users say</div>
         <p className="research-text">
-          Target the right audience with precision, optimize campaigns in real-time, and drive higher ROI through optimize campaigns in real-time, and drive higher ROI through the gateway. 
+          <q>I was impressed with how quickly i was able to secure a rental. Zillstate's platfrom is modetrn and straightforward, and the ability to   choose my preferred payment method made it even better. </q>
         </p>
         <div className="user-group">
           {users.map((user, index) => (

@@ -28,7 +28,6 @@ const AddPayment = () => {
 
   return (
     <>
-    <h1>Addpayment</h1>
     <div className="home-application-form">
       <h1>Apply for this home</h1>
       <p className="subtitle">
