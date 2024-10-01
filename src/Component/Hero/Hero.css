@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  grid-row-gap: 2rem;
+  grid-row-gap: 1px;
   /* border: 1px solid red; */
   margin-top: 20px;
-  padding: 40px;
+  padding: 60px;
 }
 
 
