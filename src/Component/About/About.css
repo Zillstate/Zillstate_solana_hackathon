@@ -13,10 +13,10 @@
 }
 
 .top_section{
-  border: .5px solid #e5e5e5;
+  /* border: .5px solid #e1e1e1; */
   border-radius: 10px;
   padding: 10px;
-  background: #e5e5e5;
+  background: #e1e1e1;
 }
 
 .top_section_sub{
@@ -51,10 +51,10 @@
 }
 
 .first_section{
-  border: .5px solid #e5e5e5;
+  /* border: .5px solid #e1e1e1; */
   border-radius: 10px;
   padding: 10px;
-  background: #e5e5e5;
+  background: #e1e1e1;
 }
 .first_section p{
  font-size: 14px;
