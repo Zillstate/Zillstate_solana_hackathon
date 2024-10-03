@@ -36,7 +36,7 @@ const AddPayment = () => {
 
       <div className="steps">
         <span onClick={HandleApply}>Application form</span>
-        <span>Personality match</span>
+        {/* <span>Personality match</span> */}
         <span className="active" onClick={handleMakePayment}>Make payment</span>
       </div>
 
@@ -55,7 +55,7 @@ const AddPayment = () => {
         <div className="add-button">
           <button>
             <PlusCircle size={20} />
-            Add new card
+            Add wallet address
           </button>
         </div>
       </div>

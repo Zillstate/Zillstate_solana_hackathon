@@ -1,5 +1,5 @@
 .application-form {
-  width: 500px;
+  width: 600px;
   margin: 50px auto;
   padding: 60px;
   border-radius: 10px;
@@ -14,7 +14,7 @@
 }
 
 .application-form p {
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
   margin-bottom: 20px;
 }
