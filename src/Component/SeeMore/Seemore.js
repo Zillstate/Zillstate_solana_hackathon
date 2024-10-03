@@ -171,8 +171,8 @@ const SeeMore = () => {
             />
             <div className="name_property">
               <div className="name_pricing">
-                  <h3>Palmspring 8D</h3>
-                  <p> bed(s)</p>
+                  <h3>Palmspring 2D</h3>
+                  <p> 4 bed(s) &bull; 2 bath(s)</p>
               </div>
               <div className="name_locatiom">
                 <p><FaMapMarkerAlt style={{ color: '#46BAAC', fontSize: '12px', marginRight: '8px' }}/> Abuja</p>
