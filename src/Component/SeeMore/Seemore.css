@@ -231,6 +231,11 @@
   margin-top: 10px;
 }
 
+.amount a{
+  color: #46BAAC;
+  text-decoration: none;
+}
+
 /* .see-more-btn {
   background-color: transparent;
   color: blue;
