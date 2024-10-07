@@ -8,6 +8,7 @@ import About from '../../Component/About/About.js'
 import Research from '../../Component/Research/Research.js'
 import Appp from '../../Component/Appp/Appp.js'
 
+
 const Hero = () => {
   return (
     <>
@@ -44,7 +45,7 @@ const Hero = () => {
     <First/>
      <About/>
     <Research/>
-    <Appp/>      
+    <Appp/>  
     </>
   )
 }

@@ -43,6 +43,7 @@ h2 {
 .continue-button {
   width: 100%;
   padding: 10px;
+  margin-top: 2rem;
   background-color:#46BAAC;
   color: white;
   border: none;
