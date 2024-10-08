@@ -2,7 +2,6 @@ import React from "react";
 import { FaUser, FaUserTie } from "react-icons/fa";
 import "./Checkin.css";
 import { Link } from 'react-router-dom'; 
-import Landlord from "../Landlord/Landlord";
 import { useNavigate } from 'react-router-dom';
 
 
@@ -62,7 +61,7 @@ function Checkin() {
             Sign up
           </Link></p>
     </div>
-    <Landlord/>
+
     </>
   );
 }
