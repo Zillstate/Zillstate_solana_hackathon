@@ -491,6 +491,7 @@ import metamask from '../../Asset/MetaMask.png';
 import { useWallet, WalletProvider } from '@solana/wallet-adapter-react';
 import { SolflareWalletAdapter } from '@solana/wallet-adapter-solflare';
 import { PhantomWalletAdapter } from '@solana/wallet-adapter-phantom';
+import { TorusWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { WalletModalProvider, WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import { Connection, clusterApiUrl } from '@solana/web3.js';
 import '@solana/wallet-adapter-react-ui/styles.css'; // Default styles for Solana wallet modal
@@ -604,7 +605,13 @@ const PaymentMethod = () => {
 // Wrap the component with the WalletProvider to enable Solana wallets
 const PaymentMethodWrapper = () => {
   const endpoint = clusterApiUrl('mainnet-beta'); // Solana network endpoint
-  const wallets = [new SolflareWalletAdapter(), new PhantomWalletAdapter()];
+  const wallets = [
+    new SolflareWalletAdapter(), 
+    new PhantomWalletAdapter(),
+    // new SolletWalletAdapter(),
+    new TorusWalletAdapter(),
+    // new SlopeWalletAdapter(),
+  ];
 
 
   return (
