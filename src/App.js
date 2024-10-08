@@ -12,6 +12,7 @@ import Payment from './Component/Payment/Payment.js';
 import Application from './Component/Application/Application.js';
 import AddPayment from './Component/AddPayment/AddPayment.js';
 import SuccessPay from './Component/SuccessPay/SuccessPay.js'
+import Landlord from './Component/Landlord/Landlord.js';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path="/application" element={<Application />} />
             <Route path="/addpayment" element={<AddPayment />} />
             <Route path="/success_booking" element={<SuccessPay />} />
+            <Route path="/landlord" element={<Landlord />} />
           </Routes>
         <Footer />
       </div>

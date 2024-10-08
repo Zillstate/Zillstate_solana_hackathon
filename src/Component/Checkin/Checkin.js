@@ -2,16 +2,22 @@ import React from "react";
 import { FaUser, FaUserTie } from "react-icons/fa";
 import "./Checkin.css";
 import { Link } from 'react-router-dom'; 
+import Landlord from "../Landlord/Landlord";
+import { useNavigate } from 'react-router-dom';
 
 
 function Checkin() {
   const handleUserSignup = () => {
-    console.log("User signup clicked");
+    navigate('/zill_sign'); 
+    // console.log("User signup clicked");
     // Add navigation or action for user sign-up
+    
   };
 
+  const navigate = useNavigate();
   const handleLandlordSignup = () => {
-    console.log("Landlord signup clicked");
+    navigate('/landlord'); 
+    // console.log("Landlord signup clicked");
     // Add navigation or action for landlord sign-up
   };
 
@@ -56,7 +62,7 @@ function Checkin() {
             Sign up
           </Link></p>
     </div>
-    
+    <Landlord/>
     </>
   );
 }

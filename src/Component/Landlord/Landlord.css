@@ -1,0 +1,71 @@
+.landlord {
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.landlord h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6F61DC;
+}
+
+.landlord form {
+  display: flex;
+  flex-direction: column;
+}
+
+.landlord label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.landlord input[type="text"],
+.landlord input[type="email"],
+.landlord input[type="tel"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.landlord input[type="file"]{
+  margin-bottom: 15px;
+  font-size: 10px;
+  width: 200px;
+  display: inline-flex;
+  
+}
+
+.image-section {
+  display: inline-flex;
+}
+
+.mint-nft-btn, .submit-btn {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.mint-nft-btn {
+  background-color: #6F61DC;
+  color: white;
+}
+
+.submit-btn {
+  background-color: #46BAAC;
+  color: white;
+}
+
+.mint-nft-btn:hover, .submit-btn:hover {
+  opacity: 0.8;
+}
