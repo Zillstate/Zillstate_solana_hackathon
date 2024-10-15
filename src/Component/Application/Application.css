@@ -1,29 +1,32 @@
 .application-form {
   width: 600px;
-  margin: 50px auto;
-  padding: 60px;
+  /* margin: 50px auto; */
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: white;
+  /* height: 40%; */
+  height: 100% !important;
+  border: 1px solid red;
 }
 
 .application-form h1 {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 5px;
 }
 
 .application-form p {
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form-tab {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -32,7 +35,7 @@
   padding: 10px;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .active-tab {
@@ -52,15 +55,17 @@
   margin-bottom: 2px; 
   margin-top: 5px; 
   font-weight: 550;
-  font-size: 14px;
+  font-size: 12px;
 }
 
-.form-number input {
+.city input,
+.state input,
+.form-number input{
   width: 100%;
   padding: 10px;
   border: 1px solid  #e5e5e5;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 10px;
   box-sizing: border-box;
 }
 
@@ -83,7 +88,7 @@
   border: none;
   border-radius: 20px;
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
   transition: background-color 0.3s;
 }

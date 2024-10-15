@@ -47,7 +47,7 @@ const Application = () => {
     <>
     <form className="application-form" onSubmit={handleSubmit}>
       <h1>Apply for this home</h1>
-      <p>Catalyst offers the competitive advantage of leveraging  <br /> advanced AI technologies</p>
+      <p>Catalyst offers the competitive advantage of leveraging advanced AI technologies</p>
 
       <div className="form-tab">
         <p className="active-tab" onClick={HandleApply}>Application form</p>
@@ -57,48 +57,54 @@ const Application = () => {
       </div>
       {/* phone number */}
       <div className="form-number">
-        <label htmlFor="">Email</label> <br />
-        <input 
+        <label htmlFor="">Email</label>
+       <p>
+       <input 
           type="email" 
           name="email" 
           placeholder="johndoe@gmail.com" 
           value={formData.email} 
           onChange={handleChange} 
         />
+       </p>
       </div>
       {/* phone number */}
       <div className="form-number">
-        <label htmlFor="">Phone Number</label> <br />
-        <input 
+        <label htmlFor="">Phone Number</label>
+       <p>
+       <input 
           type="text" 
           name="phoneNumber" 
           placeholder="Phone Number" 
           value={formData.phoneNumber} 
           onChange={handleChange} 
         />
+       </p>
       </div>
       {/* state and origin city */}
 
       <div className="native">
             <div className="city">
-              <label htmlFor="">Origin City</label> <br />
-              <input 
+              <label htmlFor="">Origin City</label>
+             <p> <input 
                 type="text" 
                 name="originCity" 
                 placeholder="Origin City" 
                 value={formData.originCity} 
                 onChange={handleChange} 
-              />
+              /></p>
             </div>
-            <div className='state'>
-            <label htmlFor="">State</label> <br />
-                <input 
+            <div className="state">
+            <label htmlFor="">State</label>
+               <p>
+               <input 
               type="text" 
               name="state" 
               placeholder="State" 
               value={formData.state} 
               onChange={handleChange} 
             />
+               </p>
 
             </div>
 
@@ -106,7 +112,8 @@ const Application = () => {
 
       <div className="native">
             <div className="city">
-              <label htmlFor="">Are you married?</label> <br />
+              <label htmlFor="">Are you married?</label> 
+                <p>
                 <input 
                   type="text" 
                   name="married" 
@@ -114,23 +121,27 @@ const Application = () => {
                   value={formData.married} 
                   onChange={handleChange} 
                 />
+                </p>
             </div>
             <div className='state'>
-            <label htmlFor="">Do you have kids?</label> <br />
-            <input 
+            <label htmlFor="">Do you have kids?</label>
+           <p>
+           <input 
                 type="text" 
                 name="kids" 
                 placeholder="Do you have kids" 
                 value={formData.kids} 
                 onChange={handleChange} 
               />
+           </p>
 
             </div>
 
       </div>
 
       <div className="form-number">
-        <label htmlFor="">Do you Practice a religion, if yes which?</label> <br />
+        <label htmlFor="">Do you Practice a religion, if yes which?</label>
+        <p>
         <input 
           type="text" 
           name="religion" 
@@ -138,21 +149,25 @@ const Application = () => {
           value={formData.religion} 
           onChange={handleChange} 
         />
+        </p>
       </div>
 
       <div className="form-number">
-        <label htmlFor="">What Occupation do you have?</label> <br />
-        <input 
+        <label htmlFor="">What Occupation do you have?</label>
+       <p>
+       <input 
           type="text" 
           name="occupation" 
           placeholder="What occupation do you have" 
           value={formData.occupation} 
           onChange={handleChange} 
         />
+       </p>
       </div>
 
       <div className="form-number">
-        <label htmlFor="">Are you comfortable paying the rent</label> <br />
+        <label htmlFor="">Are you comfortable paying the rent</label>
+        <p>
         <input 
           type="text" 
           name="comfortableRent" 
@@ -160,6 +175,7 @@ const Application = () => {
           value={formData.comfortableRent} 
           onChange={handleChange} 
         />
+        </p>
       </div>
       <div className="actions">
             <div className="term-privacy">
@@ -168,7 +184,7 @@ const Application = () => {
                 onChange={handleChange} 
                  id="terms"
                   />
-                  <label htmlFor="terms">
+                  <label htmlFor="terms" className=''>
                     I have read and agreed to the <a href="/">terms of service</a>
                   </label>
             </div>
